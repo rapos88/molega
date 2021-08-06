@@ -1,0 +1,27 @@
+<iml version="0.1">
+	<StructuralModel name="Mustang" conformsTo="MOLEGA.iml" routingMode="simpleRoute">
+
+		<Classes>
+			<Class name="RelationsGame" isAbstract="FALSE" x="195" y="125" id="2a3eed02-9663-4c3f-a5dd-2116aaad8abc">
+				<Attribute visibility="PUBLIC" name="professorLastName" type="STRING" value="Mustang" lowerBound="1" upperBound="1" position="1" />
+				<Attribute visibility="PUBLIC" name="numOfRooms" type="INTEGER" value="8" lowerBound="1" upperBound="1" position="2" />
+				<Attribute visibility="PUBLIC" name="maxNumOfPlayers" type="INTEGER" value="7" lowerBound="1" upperBound="1" position="3" />
+				<Attribute visibility="PUBLIC" name="minNumOfPlayers" type="INTEGER" value="3" lowerBound="1" upperBound="1" position="4" />
+				<Attribute visibility="PUBLIC" name="numOfStartingHandCards" type="INTEGER" value="10" lowerBound="1" upperBound="1" position="5" />
+				<Attribute visibility="PUBLIC" name="useDiscardPile" type="BOOLEAN" value="TRUE" lowerBound="1" upperBound="1" position="6" />
+			</Class>
+			<Class name="GeneralDeck" isAbstract="FALSE" x="198" y="397" id="b0707be2-dae6-4f42-8c51-e9a6fdf7825e">
+				<Attribute visibility="PUBLIC" name="fileName" type="STRING" value="d.csv" lowerBound="1" upperBound="1" position="1" />
+			</Class>
+			<Class name="winByRounds" isAbstract="FALSE" x="606" y="176" id="59a698f8-6059-4331-a9da-5367874312ed">
+				<Attribute visibility="PUBLIC" name="roundsToWinner" type="INTEGER" value="7" lowerBound="1" upperBound="1" position="1" />
+			</Class>
+		</Classes>
+
+		<Relations>
+			<Relation source="2a3eed02-9663-4c3f-a5dd-2116aaad8abc" destination="b0707be2-dae6-4f42-8c51-e9a6fdf7825e" type="COMPOSITION" name="generalDeck" lowerBound="1" upperBound="1" nameDistance="0.33" boundDistance="0" nameOffset="-15" boundOffset="0" />
+			<Relation source="2a3eed02-9663-4c3f-a5dd-2116aaad8abc" destination="59a698f8-6059-4331-a9da-5367874312ed" type="COMPOSITION" name="winCondition" lowerBound="1" upperBound="1" nameDistance="0.33" boundDistance="0" nameOffset="-15" boundOffset="0" />
+		</Relations>
+
+	</StructuralModel>
+</iml>

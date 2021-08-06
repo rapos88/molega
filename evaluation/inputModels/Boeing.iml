@@ -1,0 +1,40 @@
+<iml version="0.1">
+	<StructuralModel name="Boeing" conformsTo="MOLEGA.iml" routingMode="simpleRoute">
+
+		<Classes>
+			<Class name="CommunityJudgeGame" isAbstract="FALSE" x="200" y="150" id="e6ac4730-923d-41e1-b344-0da66dbb1cf8">
+				<Attribute visibility="PUBLIC" name="professorLastName" type="STRING" value="Boeing" lowerBound="1" upperBound="1" position="1" />
+				<Attribute visibility="PUBLIC" name="numOfRooms" type="INTEGER" value="8" lowerBound="1" upperBound="1" position="2" />
+				<Attribute visibility="PUBLIC" name="maxNumOfPlayers" type="INTEGER" value="7" lowerBound="1" upperBound="1" position="3" />
+				<Attribute visibility="PUBLIC" name="minNumOfPlayers" type="INTEGER" value="3" lowerBound="1" upperBound="1" position="4" />
+				<Attribute visibility="PUBLIC" name="numOfStartingHandCards" type="INTEGER" value="6" lowerBound="1" upperBound="1" position="5" />
+			</Class>
+			<Class name="QuestionsDeck" isAbstract="FALSE" x="152" y="387" id="930c2b07-4f0b-4795-a4bd-ffdc6c63eeb3">
+				<Attribute visibility="PUBLIC" name="fileName" type="STRING" value="q.csv" lowerBound="1" upperBound="1" position="1" />
+			</Class>
+			<Class name="AnswersDeck" isAbstract="FALSE" x="370" y="384" id="1d49feed-afed-4111-8ed7-91e30faa08b1">
+				<Attribute visibility="PUBLIC" name="fileName" type="STRING" value="a.csv" lowerBound="1" upperBound="1" position="1" />
+			</Class>
+			<Class name="winByRounds" isAbstract="FALSE" x="592" y="151" id="77848dee-b251-4b7b-a61d-c83504508972">
+				<Attribute visibility="PUBLIC" name="roundsToWinner" type="INTEGER" value="7" lowerBound="1" upperBound="1" position="1" />
+			</Class>
+			<Class name="CustomTheme" isAbstract="FALSE" x="617" y="268" id="428a71f3-06c5-4035-857d-1dc524b24002">
+				<Attribute visibility="PUBLIC" name="colorTheme" type="STRING" value="PURPLE" lowerBound="1" upperBound="1" position="1" />
+				<Attribute visibility="PUBLIC" name="tableColor" type="STRING" value="LAVENDER" lowerBound="1" upperBound="1" position="2" />
+				<Attribute visibility="PUBLIC" name="handCardColor" type="STRING" value="LIGHTPINK" lowerBound="1" upperBound="1" position="3" />
+				<Attribute visibility="PUBLIC" name="fontType" type="STRING" value="Arial" lowerBound="1" upperBound="1" position="4" />
+				<Attribute visibility="PUBLIC" name="questionCardColor" type="STRING" value="BLACK" lowerBound="1" upperBound="1" position="5" />
+				<Attribute visibility="PUBLIC" name="handCardFontColor" type="STRING" value="BLACK" lowerBound="1" upperBound="1" position="6" />
+				<Attribute visibility="PUBLIC" name="questionCardFontColor" type="STRING" value="WHITE" lowerBound="1" upperBound="1" position="7" />
+			</Class>
+		</Classes>
+
+		<Relations>
+			<Relation source="e6ac4730-923d-41e1-b344-0da66dbb1cf8" destination="930c2b07-4f0b-4795-a4bd-ffdc6c63eeb3" type="COMPOSITION" name="questionsDeck" lowerBound="1" upperBound="1" nameDistance="0.33" boundDistance="0" nameOffset="-15" boundOffset="0" />
+			<Relation source="e6ac4730-923d-41e1-b344-0da66dbb1cf8" destination="1d49feed-afed-4111-8ed7-91e30faa08b1" type="COMPOSITION" name="answersDeck" lowerBound="1" upperBound="1" nameDistance="0.33" boundDistance="0" nameOffset="-15" boundOffset="0" />
+			<Relation source="e6ac4730-923d-41e1-b344-0da66dbb1cf8" destination="77848dee-b251-4b7b-a61d-c83504508972" type="COMPOSITION" name="winCondition" lowerBound="1" upperBound="1" nameDistance="0.33" boundDistance="0" nameOffset="-15" boundOffset="0" />
+			<Relation source="e6ac4730-923d-41e1-b344-0da66dbb1cf8" destination="428a71f3-06c5-4035-857d-1dc524b24002" type="COMPOSITION" name="theme" lowerBound="0" upperBound="1" nameDistance="0.33" boundDistance="0" nameOffset="-15" boundOffset="0" />
+		</Relations>
+
+	</StructuralModel>
+</iml>

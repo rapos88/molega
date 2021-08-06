@@ -1,0 +1,33 @@
+<iml version="0.1">
+	<StructuralModel name="Stinson" conformsTo="MOLEGA.iml" routingMode="simpleRoute">
+
+		<Classes>
+			<Class name="CommunityJudgeGame" isAbstract="FALSE" x="200" y="150" id="e41158f5-c73b-4cc4-9950-477f567e27f2">
+				<Attribute visibility="PUBLIC" name="professorLastName" type="STRING" value="Stinson" lowerBound="1" upperBound="1" position="1" />
+				<Attribute visibility="PUBLIC" name="numOfRooms" type="INTEGER" value="8" lowerBound="1" upperBound="1" position="2" />
+				<Attribute visibility="PUBLIC" name="maxNumOfPlayers" type="INTEGER" value="7" lowerBound="1" upperBound="1" position="3" />
+				<Attribute visibility="PUBLIC" name="minNumOfPlayers" type="INTEGER" value="3" lowerBound="1" upperBound="1" position="4" />
+				<Attribute visibility="PUBLIC" name="numOfStartingHandCards" type="INTEGER" value="6" lowerBound="1" upperBound="1" position="5" />
+			</Class>
+			<Class name="QuestionsDeck" isAbstract="FALSE" x="174" y="373" id="31acf5b8-5e87-4dd9-ab8a-f915a04543e8">
+				<Attribute visibility="PUBLIC" name="fileName" type="STRING" value="q.csv" lowerBound="1" upperBound="1" position="1" />
+			</Class>
+			<Class name="AnswersDeck" isAbstract="FALSE" x="407" y="374" id="181a8509-280b-44cd-9831-6bf96e4aea9a">
+				<Attribute visibility="PUBLIC" name="fileName" type="STRING" value="a.csv" lowerBound="1" upperBound="1" position="1" />
+			</Class>
+			<Class name="winByRounds" isAbstract="FALSE" x="634" y="167" id="aa3e9b44-0ee3-47c3-954f-acf77b9f1ad7">
+				<Attribute visibility="PUBLIC" name="roundsToWinner" type="INTEGER" value="7" lowerBound="1" upperBound="1" position="1" />
+			</Class>
+			<Class name="AnswersDeck" isAbstract="FALSE" x="659" y="320" id="43f1a907-d44e-4b4f-8d02-68411d88f13b">
+				<Attribute visibility="PUBLIC" name="fileName" type="STRING" value="wrongDeck.csv" lowerBound="1" upperBound="1" position="1" />
+			</Class>
+		</Classes>
+
+		<Relations>
+			<Relation source="e41158f5-c73b-4cc4-9950-477f567e27f2" destination="181a8509-280b-44cd-9831-6bf96e4aea9a" type="COMPOSITION" name="answersDeck" lowerBound="1" upperBound="1" nameDistance="0.33" boundDistance="0" nameOffset="-15" boundOffset="0" />
+			<Relation source="e41158f5-c73b-4cc4-9950-477f567e27f2" destination="31acf5b8-5e87-4dd9-ab8a-f915a04543e8" type="COMPOSITION" name="questionsDeck" lowerBound="1" upperBound="1" nameDistance="0.33" boundDistance="0" nameOffset="-15" boundOffset="0" />
+			<Relation source="e41158f5-c73b-4cc4-9950-477f567e27f2" destination="aa3e9b44-0ee3-47c3-954f-acf77b9f1ad7" type="COMPOSITION" name="winCondition" lowerBound="1" upperBound="1" nameDistance="0.33" boundDistance="0" nameOffset="-15" boundOffset="0" />
+		</Relations>
+
+	</StructuralModel>
+</iml>
