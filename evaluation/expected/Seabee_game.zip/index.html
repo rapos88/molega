@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html lang='en'>
+	<head>
+		<meta charset='utf-8'/>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Test Client</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+
+	<body>
+		<div class="container" id="canvasLocation">
+			<h1 id="titleHeader"></h1>
+			<p id="roomTitle"></p>
+			<canvas id="tableCanvas" class='img-responsive'></canvas>
+			<h2 id ="handHeader"></h2>
+			
+			<br/>
+			<p id="waitText">Waiting for other Players...</p>
+			<p id="sorryText">Sorry, maximum number of players has already been reached in that room. Please choose another one</p>
+			<p id="sorryProgressText">Sorry, a game is already in progress in that room. Please choose another one</p>
+			<p id="sorryGameInterruptText">Sorry, too many players disconnected. Please join another game or restart this one</p>
+			<p id="forceEndText">Sorry, not enough cards in the deck to handle this many players. Please contact your game administrator</p>
+			<p id="nameInUseText">Name already in use. Please choose a different name</p>
+			<label for="name" id="nameLabel">Enter your name:</label>
+			<input type="text" id="name">
+			
+			<p id="chooseRoom">Choose a room to join</p>
+			<table id="roomsTable">
+			</table>
+			
+			<button type="button" id="readyButton">I'm Ready!</button>
+			<button type="button" id="goButton">Click when Everyone is Ready to Play!</button>
+			<button type="button" id="quitButton">Click to End the Game For All Players</button>
+			
+			<p id="judgeText">Choose a Winner!</p>
+			<button type="button" id="getCard">Get a Card</button>
+			
+			<canvas id="handCanvas" class='img-responsive'></canvas>
+			
+			<br/>
+			<button type="button" id="turn">Pass Turn</button>
+			<button type="button" id="discardSelected">Discard Selected Card & Pass Turn</button>
+			<br/><br/>
+
+		</div> <!--End Container Div-->
+		
+		<script src="/socket.io/socket.io.js"></script>
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+		<script type="text/javascript" src="js/constants.js"></script>
+		<script type="text/javascript" src="js/client.js"></script>
+		<script type="text/javascript" src="js/pageActions.js"></script>
+		<script type="text/javascript" src="js/socketClient.js"></script>
+		<script type="text/javascript" src="js/relations.js"></script>
+	</body>
+</html>
