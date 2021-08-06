@@ -4,7 +4,9 @@ This repo contains both the application software, and evaluation experiment for 
 
 ## application folder
 
-This folder contains the developed application, including a landing page, the MOLEGA editor/environment, and some sample output games (note: these require node.js setup to run on your own server).
+This folder contains the developed application where users can create MOLEGA models. 
+
+To reproduce our results, simply place this code on a server and visit the index.html page to use the editor. You can use the models provided in the `evaluation` dataset as examples or produce your own games. Due to the way some files are accessed, this application will not work locally, and must be accessed on a running server.
 
 ## evaluation folder
 
