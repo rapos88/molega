@@ -1,0 +1,10 @@
+const ImlActionType = {
+    ADD : "ADD",
+    DELETE : "DELETE",
+    TABLE_CHANGE : "TABLE_CHANGE",
+	PAPER_CHANGE : "PAPER_CHANGE",
+	MOVE: "MOVE",
+	MENU_CHANGE: "MENU_CHANGE",
+	CUT : "CUT",
+	PASTE : "PASTE",
+}

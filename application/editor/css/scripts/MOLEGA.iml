@@ -1,0 +1,35 @@
+<iml version="0.1">
+	<StructuralModel name="MOLEGA" conformsTo="IML Definition" routingMode="simpleRoute">
+
+		<Classes>
+			<Class name="Theme" isAbstract="TRUE" x="853" y="301" id="0f9fcf17-43aa-4491-a1e3-66a91e3eecf6" />
+			<Class name="Game" isAbstract="TRUE" x="415" y="302" id="80eab244-692f-43f6-952b-047ec1ba50df" />
+			<Class name="BlueTheme" isAbstract="FALSE" x="974" y="114" id="43a02dea-8fa4-412c-8e4f-8270be2451f9">
+				<Attribute visibility="PUBLIC" name="tableColor" type="STRING" value="BLUE" lowerBound="0" upperBound="1" position="1" />
+				<Attribute visibility="PUBLIC" name="cardColor" type="STRING" value="LIGHT BLUE" lowerBound="0" upperBound="1" position="2" />
+			</Class>
+			<Class name="RedTheme" isAbstract="FALSE" x="727" y="28" id="821bb98e-c9b7-4398-9b2a-ed855a1ee3de">
+				<Attribute visibility="PUBLIC" name="tableColor" type="STRING" value="RED" lowerBound="0" upperBound="1" position="1" />
+				<Attribute visibility="PUBLIC" name="cardColor" type="STRING" value="PINK" lowerBound="0" upperBound="1" position="2" />
+			</Class>
+			<Class name="CustomTheme" isAbstract="FALSE" x="547" y="132" id="dfbd9fd4-9f6a-464d-8a3d-7e6398f88af6">
+				<Attribute visibility="PUBLIC" name="tableColor" type="STRING" lowerBound="1" upperBound="1" position="1" />
+				<Attribute visibility="PUBLIC" name="cardColor" type="STRING" lowerBound="1" upperBound="1" position="2" />
+			</Class>
+			<Class name="GameA" isAbstract="FALSE" x="280" y="463" id="1b78374d-248a-4170-ae11-b7f3f57f54a3" />
+			<Class name="GameB" isAbstract="FALSE" x="485" y="463" id="f4bbf910-7207-461b-b4eb-f7d46c6633d5" />
+			<Class name="Score" isAbstract="FALSE" x="100" y="100" id="ca72d066-6f30-4736-baa9-585c7f9948a2" />
+		</Classes>
+
+		<Relations>
+			<Relation source="80eab244-692f-43f6-952b-047ec1ba50df" destination="0f9fcf17-43aa-4491-a1e3-66a91e3eecf6" type="COMPOSITION" name="theme" lowerBound="0" upperBound="1" nameDistance="0.33" boundDistance="0.9" nameOffset="-15" boundOffset="20" />
+			<Relation source="dfbd9fd4-9f6a-464d-8a3d-7e6398f88af6" destination="0f9fcf17-43aa-4491-a1e3-66a91e3eecf6" type="INHERITENCE" />
+			<Relation source="821bb98e-c9b7-4398-9b2a-ed855a1ee3de" destination="0f9fcf17-43aa-4491-a1e3-66a91e3eecf6" type="INHERITENCE" />
+			<Relation source="43a02dea-8fa4-412c-8e4f-8270be2451f9" destination="0f9fcf17-43aa-4491-a1e3-66a91e3eecf6" type="INHERITENCE" />
+			<Relation source="1b78374d-248a-4170-ae11-b7f3f57f54a3" destination="80eab244-692f-43f6-952b-047ec1ba50df" type="INHERITENCE" />
+			<Relation source="f4bbf910-7207-461b-b4eb-f7d46c6633d5" destination="80eab244-692f-43f6-952b-047ec1ba50df" type="INHERITENCE" />
+			<Relation source="80eab244-692f-43f6-952b-047ec1ba50df" destination="ca72d066-6f30-4736-baa9-585c7f9948a2" type="COMPOSITION" name="scoring" lowerBound="0" upperBound="1" nameDistance="0.33" boundDistance="0.9" nameOffset="-15" boundOffset="20" />
+		</Relations>
+
+	</StructuralModel>
+</iml>

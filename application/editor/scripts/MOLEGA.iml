@@ -1,0 +1,88 @@
+<iml version="0.1">
+	<StructuralModel name="MOLEGA_META" conformsTo="IML Definition" routingMode="simpleRoute">
+
+		<Classes>
+			<Class name="GAME" isAbstract="TRUE" x="606" y="140" id="709b314b-501e-4226-973c-489b3f7cfbc0">
+				<Attribute visibility="PUBLIC" name="professorLastName" type="STRING" lowerBound="1" upperBound="1" position="1" />
+				<Attribute visibility="PUBLIC" name="numOfRooms" type="INTEGER" value="8" lowerBound="1" upperBound="1" position="2" />
+				<Attribute visibility="PUBLIC" name="maxNumOfPlayers" type="INTEGER" value="7" lowerBound="1" upperBound="1" position="3" />
+				<Attribute visibility="PUBLIC" name="minNumOfPlayers" type="INTEGER" value="3" lowerBound="1" upperBound="1" position="4" />
+				<Attribute visibility="PUBLIC" name="numOfStartingHandCards" type="INTEGER" value="6" lowerBound="1" upperBound="1" position="5" />
+			</Class>
+			<Class name="CommunityJudgeGame" isAbstract="FALSE" x="455" y="350" id="1fe1f4b5-ba13-4cb6-803b-404912687188" />
+			<Class name="RelationsGame" isAbstract="FALSE" x="750" y="350" id="81c61af6-aa3e-4e58-bb28-ae62b8e9bbe1">
+				<Attribute visibility="PUBLIC" name="useDiscardPile" type="BOOLEAN" value="TRUE" lowerBound="1" upperBound="1" position="1" />
+			</Class>
+			<Class name="DECK" isAbstract="TRUE" x="662" y="627" id="e194eb1e-4607-47cf-97be-4fe659d89fcf">
+				<Attribute visibility="PUBLIC" name="fileName" type="STRING" lowerBound="1" upperBound="1" position="1" />
+			</Class>
+			<Class name="QuestionsDeck" isAbstract="FALSE" x="410" y="494" id="d6e4a5b9-48ad-4a73-b64f-632cd5d2955c" />
+			<Class name="AnswersDeck" isAbstract="FALSE" x="633" y="474" id="d1c29a49-221b-4592-9968-66ea6ca6f08f" />
+			<Class name="GeneralDeck" isAbstract="FALSE" x="829" y="491" id="94f34983-304e-4c76-a9a9-b2cba46b4a19" />
+			<Class name="THEME" isAbstract="TRUE" x="998" y="273" id="df6d3307-7c5b-48ca-9ca6-7d61655d9537" />
+			<Class name="CustomTheme" isAbstract="FALSE" x="963" y="8" id="4eaa3509-67ea-4201-b064-2706c692464e">
+				<Attribute visibility="PUBLIC" name="colorTheme" type="STRING" lowerBound="1" upperBound="1" position="1" />
+				<Attribute visibility="PUBLIC" name="tableColor" type="STRING" lowerBound="1" upperBound="1" position="2" />
+				<Attribute visibility="PUBLIC" name="handCardColor" type="STRING" lowerBound="1" upperBound="1" position="3" />
+				<Attribute visibility="PUBLIC" name="fontType" type="STRING" value="Arial" lowerBound="1" upperBound="1" position="4" />
+				<Attribute visibility="PUBLIC" name="questionCardColor" type="STRING" value="BLACK" lowerBound="1" upperBound="1" position="5" />
+				<Attribute visibility="PUBLIC" name="handCardFontColor" type="STRING" value="BLACK" lowerBound="1" upperBound="1" position="6" />
+				<Attribute visibility="PUBLIC" name="questionCardFontColor" type="STRING" value="WHITE" lowerBound="1" upperBound="1" position="7" />
+			</Class>
+			<Class name="BlueTheme" isAbstract="FALSE" x="1368" y="37" id="9e3ab7c9-1e59-401a-bf82-41399f9b3ec5">
+				<Attribute visibility="PUBLIC" name="colorTheme" type="STRING" value="CADETBLUE" lowerBound="1" upperBound="1" position="1" />
+				<Attribute visibility="PUBLIC" name="tableColor" type="STRING" value="CADETBLUE" lowerBound="1" upperBound="1" position="2" />
+				<Attribute visibility="PUBLIC" name="handCardColor" type="STRING" value="WHITE" lowerBound="1" upperBound="1" position="3" />
+				<Attribute visibility="PUBLIC" name="fontType" type="STRING" value="Arial" lowerBound="1" upperBound="1" position="4" />
+				<Attribute visibility="PUBLIC" name="questionCardColor" type="STRING" value="BLACK" lowerBound="1" upperBound="1" position="5" />
+				<Attribute visibility="PUBLIC" name="handCardFontColor" type="STRING" value="BLACK" lowerBound="1" upperBound="1" position="6" />
+				<Attribute visibility="PUBLIC" name="questionCardFontColor" type="STRING" value="WHITE" lowerBound="1" upperBound="1" position="7" />
+			</Class>
+			<Class name="RedTheme" isAbstract="FALSE" x="1384" y="255" id="da12e6de-3e43-4a48-afde-244f399e5659">
+				<Attribute visibility="PUBLIC" name="colorTheme" type="STRING" value="TOMATO" lowerBound="1" upperBound="1" position="1" />
+				<Attribute visibility="PUBLIC" name="tableColor" type="STRING" value="TOMATO" lowerBound="1" upperBound="1" position="2" />
+				<Attribute visibility="PUBLIC" name="handCardColor" type="STRING" value="WHITE" lowerBound="1" upperBound="1" position="3" />
+				<Attribute visibility="PUBLIC" name="fontType" type="STRING" value="Arial" lowerBound="1" upperBound="1" position="4" />
+				<Attribute visibility="PUBLIC" name="questionCardColor" type="STRING" value="BLACK" lowerBound="1" upperBound="1" position="5" />
+				<Attribute visibility="PUBLIC" name="handCardFontColor" type="STRING" value="BLACK" lowerBound="1" upperBound="1" position="6" />
+				<Attribute visibility="PUBLIC" name="questionCardFontColor" type="STRING" value="WHITE" lowerBound="1" upperBound="1" position="7" />
+			</Class>
+			<Class name="GreenTheme" isAbstract="FALSE" x="1165" y="481" id="cb193368-037a-4852-9b7f-f74d67464a69">
+				<Attribute visibility="PUBLIC" name="colorTheme" type="STRING" value="LIMEGREEN" lowerBound="1" upperBound="1" position="1" />
+				<Attribute visibility="PUBLIC" name="tableColor" type="STRING" value="LIMEGREEN" lowerBound="1" upperBound="1" position="2" />
+				<Attribute visibility="PUBLIC" name="handCardColor" type="STRING" value="WHITE" lowerBound="1" upperBound="1" position="3" />
+				<Attribute visibility="PUBLIC" name="fontType" type="STRING" value="Arial" lowerBound="1" upperBound="1" position="4" />
+				<Attribute visibility="PUBLIC" name="questionCardColor" type="STRING" value="BLACK" lowerBound="1" upperBound="1" position="5" />
+				<Attribute visibility="PUBLIC" name="handCardFontColor" type="STRING" value="BLACK" lowerBound="1" upperBound="1" position="6" />
+				<Attribute visibility="PUBLIC" name="questionCardFontColor" type="STRING" value="WHITE" lowerBound="1" upperBound="1" position="7" />
+			</Class>
+			<Class name="winCondition" isAbstract="TRUE" x="284" y="211" id="4435b84f-dd6e-4555-ac94-66787fa320f0" />
+			<Class name="winByRounds" isAbstract="FALSE" x="267" y="90" id="f08dcf35-1603-4723-a9ec-c8bdc9179eed">
+				<Attribute visibility="PUBLIC" name="roundsToWinner" type="INTEGER" value="7" lowerBound="1" upperBound="1" position="1" />
+			</Class>
+			<Class name="winByScore" isAbstract="FALSE" x="11" y="183" id="bd939734-1483-4ca7-b039-ae62fd1a9d95">
+				<Attribute visibility="PUBLIC" name="scoreToWinner" type="INTEGER" value="12" lowerBound="1" upperBound="1" position="1" />
+			</Class>
+		</Classes>
+
+		<Relations>
+			<Relation source="81c61af6-aa3e-4e58-bb28-ae62b8e9bbe1" destination="709b314b-501e-4226-973c-489b3f7cfbc0" type="INHERITENCE" />
+			<Relation source="1fe1f4b5-ba13-4cb6-803b-404912687188" destination="709b314b-501e-4226-973c-489b3f7cfbc0" type="INHERITENCE" />
+			<Relation source="94f34983-304e-4c76-a9a9-b2cba46b4a19" destination="e194eb1e-4607-47cf-97be-4fe659d89fcf" type="INHERITENCE" />
+			<Relation source="d1c29a49-221b-4592-9968-66ea6ca6f08f" destination="e194eb1e-4607-47cf-97be-4fe659d89fcf" type="INHERITENCE" />
+			<Relation source="d6e4a5b9-48ad-4a73-b64f-632cd5d2955c" destination="e194eb1e-4607-47cf-97be-4fe659d89fcf" type="INHERITENCE" />
+			<Relation source="1fe1f4b5-ba13-4cb6-803b-404912687188" destination="d6e4a5b9-48ad-4a73-b64f-632cd5d2955c" type="COMPOSITION" name="questionsDeck" lowerBound="1" upperBound="1" nameDistance="0.5916370106761566" boundDistance="0.9" nameOffset="57.536867339149104" boundOffset="20" />
+			<Relation source="1fe1f4b5-ba13-4cb6-803b-404912687188" destination="d1c29a49-221b-4592-9968-66ea6ca6f08f" type="COMPOSITION" name="answersDeck" lowerBound="1" upperBound="1" nameDistance="0.7102947113443682" boundDistance="0.7779572062979411" nameOffset="-35.574392817075534" boundOffset="18.825044948667156" />
+			<Relation source="81c61af6-aa3e-4e58-bb28-ae62b8e9bbe1" destination="94f34983-304e-4c76-a9a9-b2cba46b4a19" type="COMPOSITION" name="generalDeck" lowerBound="1" upperBound="1" nameDistance="0.3508771929824561" boundDistance="0.9" nameOffset="47" boundOffset="20" />
+			<Relation source="709b314b-501e-4226-973c-489b3f7cfbc0" destination="4435b84f-dd6e-4555-ac94-66787fa320f0" type="COMPOSITION" name="winCondition" lowerBound="1" upperBound="1" nameDistance="0.45119739423326055" boundDistance="0.9" nameOffset="-14.996791800133586" boundOffset="20" />
+			<Relation source="709b314b-501e-4226-973c-489b3f7cfbc0" destination="df6d3307-7c5b-48ca-9ca6-7d61655d9537" type="COMPOSITION" name="theme" lowerBound="0" upperBound="1" nameDistance="0.33" boundDistance="0.8656804733727811" nameOffset="-15" boundOffset="-20.068300535683953" />
+			<Relation source="4eaa3509-67ea-4201-b064-2706c692464e" destination="df6d3307-7c5b-48ca-9ca6-7d61655d9537" type="INHERITENCE" />
+			<Relation source="9e3ab7c9-1e59-401a-bf82-41399f9b3ec5" destination="df6d3307-7c5b-48ca-9ca6-7d61655d9537" type="INHERITENCE" />
+			<Relation source="da12e6de-3e43-4a48-afde-244f399e5659" destination="df6d3307-7c5b-48ca-9ca6-7d61655d9537" type="INHERITENCE" />
+			<Relation source="cb193368-037a-4852-9b7f-f74d67464a69" destination="df6d3307-7c5b-48ca-9ca6-7d61655d9537" type="INHERITENCE" />
+			<Relation source="bd939734-1483-4ca7-b039-ae62fd1a9d95" destination="4435b84f-dd6e-4555-ac94-66787fa320f0" type="INHERITENCE" />
+			<Relation source="f08dcf35-1603-4723-a9ec-c8bdc9179eed" destination="4435b84f-dd6e-4555-ac94-66787fa320f0" type="INHERITENCE" />
+		</Relations>
+
+	</StructuralModel>
+</iml>

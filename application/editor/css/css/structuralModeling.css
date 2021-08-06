@@ -1,0 +1,132 @@
+.editableCell {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+}
+
+.editing {
+    text-align: left;
+    width: 80%;
+    
+}
+.valueButton{
+    width: auto;
+    margin-left: 5px;
+}
+
+.conformIcon {
+  border: 2px solid;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 95px;
+  color: white;
+  border-radius: 4px;
+  height: 95px;
+  width: 100%;
+}
+
+
+.model-conformance {
+	margin: 5px 5px;
+
+}
+
+.float-childA {
+    width: 15%;
+    float: left;
+    padding: 2px 2px;
+}
+
+.float-childB {
+    width: 82%;
+    float: right;
+    padding: 2px 2px;
+}  
+
+.numberInputNumber{
+    text-align: left;
+    width: 80%;
+}
+
+.numberInputButton{
+    width: auto;
+    margin-left: 5px;
+}
+
+.uneditableCell {
+    background-color: rgba(221, 221, 221, 0.2);
+}
+
+.paletteIcon {
+    margin: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.palette {
+	height: 85%;
+    overflow-y:auto;
+}
+
+.paletteIcon:active {
+    transform: translateY(4px);
+}
+
+.propertyTableCell {
+    text-align: left;
+    width:50%;
+}
+
+#paperHolder {
+    overflow: hidden;
+    height:700px;
+    width:100%;
+}
+
+.link-tools .tool-remove { 
+	display: none 
+}
+
+.joint-link.joint-theme-default .marker-arrowhead { 
+	fill-opacity: 0 
+}
+
+.lblname{
+  display: table-cell;
+  padding: 0 5px;
+  vertical-align: middle;
+}
+
+.sweetalert-wide { width: 1000px !important; }
+
+.conformanceErrors{
+	border-style: solid;
+	border: 1px solid rgba(221, 221, 221, 1);
+	border-radius: 4px;
+	overflow-y: scroll;
+	height: 95px;
+	white-space: pre-wrap;
+	font-size: 10px;
+	display:none;
+}
+
+#routingOptions > li > a > .fa{
+    visibility:hidden;
+}
+#routingOptions > li > a.selected > .fa{
+    visibility:visible;
+}
+
+.dropdown-menu li:hover > ul.dropdown-menu {
+    display: block;
+}
+.dropdown-submenu {
+    position:relative;
+}
+.dropdown-submenu>.dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top:-6px;
+}

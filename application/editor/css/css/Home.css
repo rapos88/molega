@@ -1,0 +1,105 @@
+.Home-btn-image{
+	
+	width:35%;  
+	padding:4%;
+
+}
+
+
+.IML-gif-border{
+	border:1px solid black;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.HomeNavBar{
+    background-color: #e7e7e7;
+    
+}
+
+.login-btn{
+	
+	width:85%;
+	
+}
+
+.IML-header{
+	
+	background-color:rgb( 040, 096 ,144)!important;
+	color: white !important;
+}
+
+
+.IML-header-text-title{
+	margin-top: 2%;
+	font-size: 22px;
+}
+
+.IML-panel-title h2{
+	
+	margin-top: 6.5%!important;
+	
+}
+
+.IML-panel-structural{
+	background-color:rgb(214, 220, 229) !important;
+	border-color:rgb(214, 220, 229) !important;
+	
+	
+}
+
+.IML-panel-transform{
+	background-color:rgb(192, 202, 216) !important;
+	border-color:rgb(192, 202, 216) !important;
+	
+	
+}
+
+
+.IML-panel-model{
+	background-color:rgb( 173, 185, 202) !important;
+	border-color:rgb( 173, 185, 202) !important;
+	
+}
+
+
+.IML-panel-test{
+	background-color:rgb(152, 168, 189) !important;
+	border-color:rgb(152, 168, 189) !important;
+	
+	
+}
+
+.IML-panel-edit{
+	background-color:rgb(132, 151 ,176) !important;
+	border-color:rgb(132, 151 ,176) !important;
+	
+}
+
+body{
+	height:100%;
+}
+
+
+.panel-group{
+	display: flex;
+	flex-direction: column;
+	height:100%;
+	margin-bottom:0 !important;
+}
+
+.panel-group .panel+.panel{
+	margin-top: 0 !important;
+}
+
+.navbar{
+	margin-bottom:0  !important;
+}
+
+.metamodel{
+	font-weight: bolder;
+ }
+ .instancemodel{
+	margin-left: 20px;
+ }
